@@ -107,10 +107,10 @@ analytics:
 # Site Author
 author:
   name             : "Yuk Hoi Yiu"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo-forest.jpg"
   bio              : "PhD in Computational Neuroscience"
   location         : "Munich"
-  email            :
+  email            : "hoi.yiu@bio.lmu.de"
   links:
     - label: "Email"
       icon: "hoi.yiu@bio.lmu.de"
@@ -126,10 +126,11 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/yyhhoi"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+
 
 # Site Footer
 footer:
@@ -293,6 +294,8 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar:
+        nav: "docs"
   # _pages
   - scope:
       path: ""
@@ -300,3 +303,6 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "docs"
+

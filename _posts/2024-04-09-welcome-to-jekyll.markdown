@@ -1,8 +1,11 @@
 ---
-title:  "Welcome to Jekyll!"
-date:   2024-04-09 09:29:57 +0200
-categories: jekyll update
+title:  "How do we remember a sequence of memories? By thinking of the present and future."
+date:   2022-03-16 09:29:57 +0100
+header:
+  teaser: "/assets/images/rat-2paths.png"
+categories:
 ---
+![alt text](/assets/images/rat-2paths.png "Title")
 Test change.
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
