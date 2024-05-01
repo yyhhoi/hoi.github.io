@@ -31,11 +31,11 @@ figcaption {
 <div class="container">
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/dirnet_animation_base.gif" alt='image 1' />
-        <figcaption>When the agent is moving, the neurons (colored dots) around the agent propagates along the actual movement direction (arrow), representing the "immediate action plan", while remote sequences branch off to alternative pathways, representing the "mind-wandering". </figcaption>
+        <figcaption>When the agent is moving, the place cells activities (colored dots) around the agent propagate along the actual movement direction (arrow), representing the "immediate action plan", while remote sequences branch off to alternative pathways, representing the "mind-wandering". </figcaption>
     </figure>
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/dirnet_model.png" alt='image 2' />
-        <figcaption>The model architecture of the biological neural networks. Local sequence is produced by local recurrence between neurons. Remote sequence is played out by cross-layer projections, learnt from past experiences via synaptic learning rules. </figcaption>
+        <figcaption>The model architecture of neural networks. Local sequence is produced by local recurrence between neurons (place cells). Remote sequence is played out by cross-layer projections, learnt from past experiences via synaptic learning rules. </figcaption>
     </figure>
 </div>
 
