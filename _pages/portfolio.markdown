@@ -35,7 +35,7 @@ figcaption {
     </figure>
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/dirnet_model.png" alt='image 2' />
-        <figcaption>The model architecture of the biological neural networks. Local sequence is produced by local recurrence between neurons. Remote sequence is played out by cross-layer projections, learnt from past history via synaptic learning rules. </figcaption>
+        <figcaption>The model architecture of the biological neural networks. Local sequence is produced by local recurrence between neurons. Remote sequence is played out by cross-layer projections, learnt from past experience via synaptic learning rules. </figcaption>
     </figure>
 </div>
 
