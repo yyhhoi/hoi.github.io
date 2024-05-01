@@ -306,3 +306,4 @@ defaults:
       sidebar:
         nav: "docs"
 
+livereload: true

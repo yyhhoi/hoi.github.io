@@ -4,15 +4,47 @@ permalink: /portfolio/
 classes: wide
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Directional Net (2023)
+<!--
+#TODO: Reduce the Gif's caption length by indicating the "Online"/"Remote" directly in the animation.
+#TODO: Remove "Nth theta cycle".
+-->
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+<style>
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Ensures alignment at the top even if one is taller */
+}
+
+img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+figcaption {
+    text-align: left; /* Aligns caption text to the left */
+}
+</style>
+
+<div class="container">
+    <figure style="width: 400px; margin: 10px;">
+        <img src="/assets/images/dirnet_animation.gif" alt='image 1' />
+        <figcaption>When the agent is moving (black triangle), the local activity sequence is propagated around the actual trajectory, representing the immediate action plan, while remote sequences lead to alternative pathways, representing the "mind-wandering".</figcaption>
+    </figure>
+    <figure style="width: 400px; margin: 10px;">
+        <img src="/assets/images/dirnet_model.png" alt='image 2' />
+        <figcaption>The architecture of our biological neural networks.</figcaption>
+    </figure>
+</div>
 
 
-[jekyll-organization]: https://github.com/jekyll
+Human thinking process is inherently dual in nature: One is "local/actual", and the another is "remote/virtual". Like while we are chopping an onion, we also mind-wander and think about what if we don't make a soup today? Or even buying a house in the future.
+
+To model such a memory function, we **developed a mathematical framework** and **simulated a biological neural network**. We applied methods such as **predictive classifiers**, **time-series analysis** and **parameter estimation** on the simulated neural data to prove our hypothesis. We focused our problem in the context of spatial navigation, where a memory corresponds to a location, and a sequence of locations forms a spatial trajectory. We demonstrated that neuron populations can support such dual coding and published our results in highly-recognized scientific journal [*eLife*](https://elifesciences.org/articles/86837).
+
+
+
+
+
