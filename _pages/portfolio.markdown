@@ -31,18 +31,18 @@ figcaption {
 <div class="container">
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/dirnet_animation_base.gif" alt='image 1' />
-        <figcaption>When the agent is moving, the place cells activities (colored dots) around the agent propagate along the actual movement direction (arrow), representing the "immediate action plan", while remote sequences branch off to alternative pathways, representing the "mind-wandering". </figcaption>
+        <figcaption>Neural activity sequences representing the immediate action plan (local movement, arrow), and the remote alternative pathways (virtual plans), in spatial navigation. </figcaption>
     </figure>
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/dirnet_model.png" alt='image 2' />
-        <figcaption>The model architecture of neural networks. Local sequence is produced by local recurrence between neurons (place cells). Remote sequence is played out by cross-layer projections, learnt from past experiences via synaptic learning rules. </figcaption>
+        <figcaption>The neural network model. Local sequence is produced by local recurrence between neurons (place cells). Remote sequence is played out by remote projections, learnt from past experiences via learning rules. </figcaption>
     </figure>
 </div>
 
 
-Human thinking process is inherently dual in nature: One is "local/actual", and the another is "remote/virtual". Like while we are chopping an onion, we also mind-wander and think about what if we don't make a soup today? Or even buying a house in the future.
+Human thinking process is inherently dual in nature: One is "local/actual", and the another is "remote/virtual". Like while we are chopping an onion, we also "mind-wander" about what if we make a soup today instead? Or buying a house in the future?
 
-To model such a memory function, we **developed a mathematical framework** and **simulated the dynamics of a biological neural network**. We applied methods such as **predictive classifiers**, **time-series analysis** and **bayesian parameter estimation** on the simulated neural data to prove our hypothesis. We demonstrated that sequential firing of neurons can support such dual coding, and published our results in a highly-recognized scientific journal [*eLife*](https://elifesciences.org/articles/86837).
+To model such a memory function, we **developed a mathematical framework** and **simulated the dynamics of a biological neural network** (see figures). We applied methods such as **predictive classifiers**, **time-series analysis** and **bayesian parameter estimation** on the simulated neural data to prove our hypothesis. We demonstrated that sequential firing of neurons can support such dual coding, and published our results in a highly-recognized scientific journal [*eLife*](https://elifesciences.org/articles/86837).
 
 
 
