@@ -75,15 +75,18 @@ Python (NumPy, Pandas, SciPy, Matplotlib), MATLAB, SQL
 [*The Journal of Neurosciences*, 2022](https://www.jneurosci.org/content/42/11/2282)
 
 
+<div class="container">
+    <figure style="width: 600px; margin: 10px;">
+        <img src="/assets/images/exp_raw_data_base.png" alt='image 1' />
+        <figcaption>Data set: Raw EEG time-series data (Left) and extracted spike events (Right). </figcaption>
+    </figure>
+    <figure style="width: 600px; margin: 5px;">
+        <img src="/assets/images/exp_results.png" alt='image 1' />
+        <figcaption>Methods: Data processing and visualization, time-series analysis, regression and hypothesis testing. See our <a href="https://www.jneurosci.org/content/42/11/2282">paper</a> for more details.</figcaption>
+    </figure>
+</div>
 
-<figure style="width: 800px; margin: 5px;">
-    <img src="/assets/images/exp_raw_data_base.png" alt='image 1' />
-    <figcaption>Data set: Raw EEG time-series data (Left) and extracted spike events (Right).</figcaption>
-</figure>
 
 
-<figure style="width: 800px; margin: 5px;">
-    <img src="/assets/images/exp_results.png" alt='image 1' />
-    <figcaption>Methods: Data processing and visualization, time-series analysis, regression and hypothesis testing. See our <a href="https://www.jneurosci.org/content/42/11/2282">paper</a> for more details.</figcaption>
 
-</figure>
+
