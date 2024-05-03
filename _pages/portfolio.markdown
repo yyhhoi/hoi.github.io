@@ -25,10 +25,10 @@ figcaption {
 </style>
 
 
-## Dual-Sequence Net
+# Dual-Sequence Net
 
 **Summary**:
-Human thinking process is inherently dual in nature: Like while we are chopping an onion (local/actual actions), we might "mind-wander" and think what if we wathced TV instead? (remote/v  irtual plan). To model such a process, we simulated a biological neural network to test our theory. We showed that sequential firing of neurons can support such dual coding, and published our results in *eLife*.
+Human thinking process is inherently dual in nature: Like while we are chopping an onion (local/actual actions), we might "mind-wander" and think what if we wathced TV instead? (remote/virtual plan). To model such a process, we simulated a biological neural network to test our theory. We showed that sequential firing of neurons can support such dual coding, and published our results in *eLife*.
 
 **Methods**:
 Theoretical Modelling with Differential Equations, Numerical Simulation, Non-linear Classifiers, Synaptic Learning Rules, Time-series Analysis.
@@ -57,7 +57,7 @@ Python (NumPy, PyTorch, Pandas, SciPy, Matplotlib), SQL
 </div>
 
 
-## Brain Data Science
+# Brain Data Science
 
 **Summary**:
 We proposed [a network model of dual processes](#dual-sequence-net), but is it actually how our brain works? By analyzing the brain data of rodents recorded by microelectrodes, we were able to prove that such dual coding exists, and published our results in *The Journal of Neurosciences*.
