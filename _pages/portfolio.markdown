@@ -82,7 +82,7 @@ Python (NumPy, Pandas, SciPy, Matplotlib), MATLAB, SQL
 
 <figure style="width: 600px; margin: 5px;">
     <img src="/assets/images/exp_results.png" alt='image 1' />
-    <figcaption>Methods: Data processing and visualization, time-series analysis, regression and hypothesis testing. See our <a href="https://www.jneurosci.org/content/42/11/2282">paper</a> for more details.</figcaption>
+    <figcaption>Cross-correlation of spike trains demonstrates the existence of both local (A-B) and non-local (C) spike sequences as the heterogeneous components of neural representation (D). See our <a href="https://www.jneurosci.org/content/42/11/2282">paper</a> for more details.</figcaption>
 </figure>
 
 
