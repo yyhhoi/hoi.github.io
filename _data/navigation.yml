@@ -11,7 +11,8 @@ main:
 docs:
   - title: Getting Started
     children:
-      - title: "Quick-Start Guide"
+      - title: "Dual-sequence-net"
+        url: /portfolio/#dual-sequence-net
       - title: "Structure"
       - title: "Installation"
       - title: "Upgrading"

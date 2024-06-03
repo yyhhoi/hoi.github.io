@@ -2,6 +2,7 @@
 title: Portfolio
 permalink: /portfolio/
 classes: wide
+toc: true
 ---
 
 <style>
@@ -25,25 +26,34 @@ figcaption {
 </style>
 
 
-# Dual-Sequence Net
+# Imitation Navigation (2023-24)
+
+<div class="container">
+    <figure style="width: 350px; margin: 10px;">
+        <img src="/assets/images/iminav/breakroom.png" alt='image 1' />
+        <figcaption>The environment of the robotic simulation. The robot (top right) needs to navigate to the bottom left corner.</figcaption>
+    </figure>
+    <figure style="width: 450px; margin: 10px;">
+        <img src="/assets/images/iminav/iminav.gif" alt='image 2' />
+        <figcaption> (Top left) In robotic problems, a simple room is already too complex for a random policy to reach the goal. After showing the demo to the RL agent (top right), the agent learned the demo policy (bottom left) and was later fine-tuned to navigate optimally (bottom right). </figcaption>
+    </figure>
+</div>
 
 **Summary**:
-Human thinking process is inherently dual in nature: Like while we are chopping an onion (local/actual actions), we might "mind-wander" and think what if we wathced TV instead? (remote/virtual plan). To model such a process, we simulated a biological neural network to test our theory. We showed that sequential firing of neurons can support such dual coding, and published our results in *eLife*.
+In reinforcement learning (RL), if an agent never stumbles upon the reward with the initial policy, how can it ever learn the optimal policy? It happens when the environment is too complex, or a simulation/deployment is too time-consuming (as in the case of robotics).
+
+In this project, I have implemented an Imitation Learning algorithm AWAC (Advantage Weighted Actor Critic, by [UC Berkeley](https://arxiv.org/abs/2006.09359)) to solve a spatial navigaation problem (see figures). Initially, a naive random policy can never bring the robot to the goal location. After imitating an obstacle-avoidance controller policy, it was possible to sample the reward at the goal, and further fine-tune the policy for the optimal pathway. It was the first instance that imitation leraning was applied to spatial navigation problem.
 
 **Methods**:
-Theoretical Modelling with Differential Equations, Numerical Simulation, Non-linear Classifiers, Synaptic Learning Rules, Time-series Analysis.
+Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Simulator (Webots, Python), Computer Vision (OpenCV, pretrained CNNs)
 
-**Implementations**: 
-Python (NumPy, PyTorch, Pandas, SciPy, Matplotlib), SQL
-
-**Collaborators**: 
-[Prof. Christian Leibold](https://www.bio.uni-freiburg.de/groups/leibold-en)
-
-**Publication**: 
-[*eLife*, 2023](https://elifesciences.org/articles/86837)
+**GitHub repo**: <https://github.com/yyhhoi/ImiNav>
 
 
 
+
+
+# Dual-Sequence Net (2021-23)
 
 <div class="container">
     <figure style="width: 400px; margin: 10px;">
@@ -56,24 +66,19 @@ Python (NumPy, PyTorch, Pandas, SciPy, Matplotlib), SQL
     </figure>
 </div>
 
-
-# Brain Data Science
-
 **Summary**:
-We proposed [a network model of dual processes](#dual-sequence-net), but is it actually how our brain works? By analyzing the brain data of rodents recorded by microelectrodes, we were able to prove that such dual coding exists, and published our results in *The Journal of Neurosciences*.
+Human thinking process is inherently dual in nature: While we were chopping an onion (local/actual actions), we might "mind-wander" and think what if we wathced TV instead? (remote/virtual plan). To model such a process, we simulated a biological neural network to test our theory. We showed that sequential firing of neurons can support such dual coding, and published our results in *eLife*.
 
-**Methods**: 
-Circular Statistics, Regression Analysis, Hypothesis Testing, Linear classifiers, Time-series Analysis, Bayesian Parameter Estimation.
+**Methods**:
+Mathematical Modelling of Complex Systems, Numerical Simulation (Python, C++), Non-linear Classifiers, Synaptic Learning Rules, Time-series Analysis.
 
-**Implementations**: 
-Python (NumPy, Pandas, SciPy, Matplotlib), MATLAB, SQL
 
-**Collaborators**: 
-[Prof. Christian Leibold](https://www.bio.uni-freiburg.de/groups/leibold-en), [Prof. Jill Leutgeb](https://biology.ucsd.edu/research/faculty/jleutgeb)
+**Publication**: Yiu, Y.-H., & Leibold, C. (2023). A theory of hippocampal theta correlations accounting for extrinsic and intrinsic sequences. eLife, 12, RP86837. <https://doi.org/10.7554/eLife.86837.4>
 
-**Publication**: 
-[*The Journal of Neurosciences*, 2022](https://www.jneurosci.org/content/42/11/2282)
 
+
+
+# Brain Data Science (2019-22)
 
 <figure style="width: 600px; margin: 10px;">
     <img src="/assets/images/exp_raw_data_base.png" alt='image 1' />
@@ -85,8 +90,70 @@ Python (NumPy, Pandas, SciPy, Matplotlib), MATLAB, SQL
     <figcaption>Cross-correlation of spike trains demonstrates the existence of both local (A-B) and non-local (C) spike sequences as the heterogeneous components of neural representation (D). See our <a href="https://www.jneurosci.org/content/42/11/2282">paper</a> for more details.</figcaption>
 </figure>
 
+**Summary**:
+We proposed [a network model of dual processes](#dual-sequence-net), but is it actually how our brain works? By analyzing the brain data of rodents recorded by microelectrodes, we were able to prove that such dual coding exists, and published our results in *The Journal of Neurosciences*.
+
+**Methods**: 
+Circular Statistics, Regression Analysis, Hypothesis Testing, Linear classifiers, Time-series Analysis, Bayesian Parameter Estimation.
+
+**Publication**: 
+Yiu, Y.-H., Leutgeb, J. K., & Leibold, C. (2022). Directional Tuning of Phase Precession Properties in the Hippocampus. The Journal of Neuroscience, 42(11), 2282–2297. <https://doi.org/10.1523/JNEUROSCI.1569-21.2021>
+
+
+
+# Latent Gait Patterns (2019)
+
+<div class="container">
+    <figure style="width: 400px; margin: 10px;">
+        <img src="/assets/images/gait/Network.png" alt='image 1' />
+        <figcaption>Network architecture. Pose sequences (inferred from walking videos) were compressed into low-dimensional latent space using VAEs, with auxiliary classification tasks to improve clustering. </figcaption>
+    </figure>
+    <figure style="width: 400px; margin: 10px;">
+        <img src="/assets/images/gait/Latents.png" alt='image 2' />
+        <figcaption>Walking sequences (left) can be generated by sampling from the trained latent space (right). Some clusters demonstrate pathological walking patterns. Diagnosis could be made by evaluating the distance of a walking video to the pathological clusters (such as through KNN classifier) in the latent space.</figcaption>
+    </figure>
+</div>
+
+**Summary**: People with vertigo and balance disorders often exhibit abnormal gait patterns while walking, such as staggering or overly rigid motion. Here, we employed generative models such as Variational Autoencoders (VAEs) to examine the latent variables underlying these pathological walking patterns.
+
+In cooperation with LMU clinics, we gained access to thousands of walking videos of patients with vertigo and balance disorders. By training the VAEs on these videos, we found that pathological walking patterns were clearly clustered in the latent space. Such a representation can aid in video-based diagnosis without relying on clinical observational assessment.
+
+**Methods**: Deep Learning (Pytorch), Computer Vision, Data Processing
+
+**Article**:
+[MSc Thesis link](https://www.researchgate.net/publication/381114885_Deep_Spatio-Temporal_Representation_Learning_of_Gait_Signals_in_Patients_with_Vertigo_and_Balance_Disorders)
+
+**GitHub repo**: <https://github.com/yyhhoi/gait>
 
 
 
 
+# DeepVOG (2018-19)
 
+<figure style="width: 500px; margin: 10px; text-align: center;">
+    <img src="/assets/images/deepvog/deepvog.gif" alt='image 1' />
+    <figcaption>Video-based Gaze estimation via semantic segmentation (left, pixel-wise classification of the pupil area).</figcaption>
+</figure>
+
+<div class="container">
+    <figure style="width: 400px; margin: 10px;">
+        <img src="/assets/images/deepvog/Network.png" alt='image 1' />
+        <figcaption>Netowrk architecture. A U-net schema with CNNs for semantic segmentation of eye pupil from images. </figcaption>
+    </figure>
+    <figure style="width: 400px; margin: 10px;">
+        <img src="/assets/images/deepvog/3Dmodel.png" alt='image 2' />
+        <figcaption>Using computational geometry to fit a 3D eye-ball model from a series of segmented 2D ellipses, enabling gaze direction estimation. </figcaption>
+    </figure>
+</div>
+
+
+**Summary**: Conventional eye-tracking algorithms failed to detect eye movements in dark and noisy camera videos, such as when recorded inside an MRI machine. To solve the problem, we developed a deep-learning based eye tracking model for noisy camera feeds. 
+
+The network was trained on clinical eyetracking images provided by LMU clinics. It performs semantic segmentation on eye pupil area and fit a 3D eye-ball model to estimate the gaze. The network generalizes well to other data sets. A Docker image is available for easy deployment of the model.
+
+**Methods**: Deep Learning (TensorFlow, Keras), Computer Vision (OpenCV), Data Augmentation (Keras), Data Processing (Python).
+
+**Publication**: 
+Yiu, Y.-H., Aboulatta, M., Raiser, T., Ophey, L., Flanagin, V. L., zu Eulenburg, P., & Ahmadi, S.-A. (2019). DeepVOG: Open-source pupil segmentation and gaze estimation in neuroscience using deep learning. *Journal of Neuroscience Methods*, 324, 108307. <https://doi.org/10.1016/j.jneumeth.2019.05.016>
+
+**GitHub repo**: <https://github.com/pydsgz/DeepVOG>
