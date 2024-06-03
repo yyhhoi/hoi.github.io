@@ -110,10 +110,10 @@ author:
   avatar           : "/assets/images/bio-photo-forest.jpg"
   bio              : "PhD in Computational Neuroscience"
   location         : "Munich"
-  email            : "hoi.yiu@bio.lmu.de"
+  email            : "yyhhoi@gmail.com"
   links:
     - label: "Email"
-      icon: "hoi.yiu@bio.lmu.de"
+      url: "mailto:yyhhoi@gmail.com"
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"

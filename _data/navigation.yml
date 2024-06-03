@@ -9,10 +9,15 @@ main:
 
 
 docs:
-  - title: Getting Started
+  - title: Portfolio
     children:
-      - title: "Dual-sequence-net"
+      - title: Imitative Navigator
+        url: /portfolio/#imitative-navigator
+      - title: "Dual-Sequence Net"
         url: /portfolio/#dual-sequence-net
-      - title: "Structure"
-      - title: "Installation"
-      - title: "Upgrading"
+      - title: "Brain Data Science"
+        url: /portfolio/#brain-data-science
+      - title: "Latent Gait Patterns"
+        url: /portfolio/#latent-gait-patterns
+      - title: "DeepVOG"
+        url: /portfolio/#deepvog

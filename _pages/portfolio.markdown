@@ -25,9 +25,11 @@ figcaption {
 }
 </style>
 
+<br>
+<br>
 
-# Imitation Navigation (2023-24)
-
+# Imitative Navigator
+2023-24
 <div class="container">
     <figure style="width: 350px; margin: 10px;">
         <img src="/assets/images/iminav/breakroom.png" alt='image 1' />
@@ -49,12 +51,12 @@ Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Sim
 
 **GitHub repo**: <https://github.com/yyhhoi/ImiNav>
 
+<br>
+<br>
 
 
-
-
-# Dual-Sequence Net (2021-23)
-
+# Dual-Sequence Net
+2021-2023
 <div class="container">
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/dirnet_animation_base.gif" alt='image 1' />
@@ -76,10 +78,12 @@ Mathematical Modelling of Complex Systems, Numerical Simulation (Python, C++), N
 **Publication**: Yiu, Y.-H., & Leibold, C. (2023). A theory of hippocampal theta correlations accounting for extrinsic and intrinsic sequences. eLife, 12, RP86837. <https://doi.org/10.7554/eLife.86837.4>
 
 
+<br>
+<br>
 
 
-# Brain Data Science (2019-22)
-
+# Brain Data Science
+2019-22
 <figure style="width: 600px; margin: 10px;">
     <img src="/assets/images/exp_raw_data_base.png" alt='image 1' />
     <figcaption>Data set: Raw EEG time-series data (Left) and extracted spike events (Right). </figcaption>
@@ -99,10 +103,12 @@ Circular Statistics, Regression Analysis, Hypothesis Testing, Linear classifiers
 **Publication**: 
 Yiu, Y.-H., Leutgeb, J. K., & Leibold, C. (2022). Directional Tuning of Phase Precession Properties in the Hippocampus. The Journal of Neuroscience, 42(11), 2282–2297. <https://doi.org/10.1523/JNEUROSCI.1569-21.2021>
 
+<br>
+<br>
 
 
-# Latent Gait Patterns (2019)
-
+# Latent Gait Patterns
+2019
 <div class="container">
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/gait/Network.png" alt='image 1' />
@@ -125,11 +131,13 @@ In cooperation with LMU clinics, we gained access to thousands of walking videos
 
 **GitHub repo**: <https://github.com/yyhhoi/gait>
 
+<br>
+<br>
 
 
 
-# DeepVOG (2018-19)
-
+# DeepVOG
+2018-19
 <figure style="width: 500px; margin: 10px; text-align: center;">
     <img src="/assets/images/deepvog/deepvog.gif" alt='image 1' />
     <figcaption>Video-based Gaze estimation via semantic segmentation (left, pixel-wise classification of the pupil area).</figcaption>
