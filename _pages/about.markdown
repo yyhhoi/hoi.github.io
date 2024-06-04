@@ -3,15 +3,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hey there! I'm a Ph.D. graduate from the University of Munich and Freiburg, where I developed neuro-inspired learning algorithms combined with reinforcement learning for wheeled robots. Before diving into this exciting Ph.D. journey, I earned my Master’s degree, focusing on deep learning, computer vision, representational learning, and generative models for two intensive years.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+My academic adventure started with a background in Biomedical Engineering, where I specialized in bio-sensors. This unique blend of experiences has given me a diverse skill set and a passion for innovative technology.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+When I'm not immersed in the world of AI and Data Sciences, you'll find me exploring the Alps, hiking, and climbing to my heart's content.

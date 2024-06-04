@@ -112,9 +112,8 @@ author:
   location         : "Munich"
   email            : "yyhhoi@gmail.com"
   links:
-    - label: "Email"
-      url: "mailto:yyhhoi@gmail.com"
-      # url: "mailto:your.name@email.com"
+    # - label: "Email"
+    #   url: "mailto:yyhhoi@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

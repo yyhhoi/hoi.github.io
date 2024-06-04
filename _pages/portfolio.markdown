@@ -37,17 +37,17 @@ figcaption {
     </figure>
     <figure style="width: 450px; margin: 10px;">
         <img src="/assets/images/iminav/iminav.gif" alt='image 2' />
-        <figcaption> (Top left) In robotic problems, a simple room is already too complex for a random policy to reach the goal. After showing the demo to the RL agent (top right), the agent learned the demo policy (bottom left) and was later fine-tuned to navigate optimally (bottom right). </figcaption>
+        <figcaption> (Top left) In robotics, a simple room is already too complex for a random policy to reach the goal. After showing the demo to the RL agent (top right), the agent learned the demo policy (bottom left), which was later fine-tuned to be optimal (bottom right). </figcaption>
     </figure>
 </div>
 
 **Summary**:
-In reinforcement learning (RL), if an agent never stumbles upon the reward with the initial policy, how can it ever learn the optimal policy? It happens when the environment is too complex, or a simulation/deployment is too time-consuming (as in the case of robotics).
+In reinforcement learning (RL), an initial naive policy often needs to iterate numerous times to sample the reward signal, which poses a challenge to robotics as each robotic deployment or simulation is very costly. 
 
-In this project, I have implemented an Imitation Learning algorithm AWAC (Advantage Weighted Actor Critic, by [UC Berkeley](https://arxiv.org/abs/2006.09359)) to solve a spatial navigaation problem (see figures). Initially, a naive random policy can never bring the robot to the goal location. After imitating an obstacle-avoidance controller policy, it was possible to sample the reward at the goal, and further fine-tune the policy for the optimal pathway. It was the first instance that imitation leraning was applied to spatial navigation problem.
+I implemented an Imitation Learning algorithm, called AWAC (Advantage Weighted Actor Critic, by [UC Berkeley](https://arxiv.org/abs/2006.09359)), to solve the problem in the context of spatial navigation. Initially, a random policy was inefficient to bring the robot to the goal location. After imitating an obstacle-avoidance controller policy, it was possible to sample the goal reward. Further fine-tuning the policy led to the optimal pathway. It was the first instance that imitation leraning was applied to spatial navigation problem.
 
 **Methods**:
-Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Simulator (Webots, Python), Computer Vision (OpenCV, pretrained CNNs)
+Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Simulator (Webots, Python), Computer Vision (OpenCV \& pretrained CNNs), Classical Machine Learning.
 
 **GitHub repo**: <https://github.com/yyhhoi/ImiNav>
 
@@ -72,7 +72,7 @@ Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Sim
 Human thinking process is inherently dual in nature: While we were chopping an onion (local/actual actions), we might "mind-wander" and think what if we wathced TV instead? (remote/virtual plan). To model such a process, we simulated a biological neural network to test our theory. We showed that sequential firing of neurons can support such dual coding, and published our results in *eLife*.
 
 **Methods**:
-Mathematical Modelling of Complex Systems, Numerical Simulation (Python, C++), Non-linear Classifiers, Synaptic Learning Rules, Time-series Analysis.
+Mathematical Modelling of Complex Systems, Numerical Simulation (Python, C++), Classical Machine Learning, Synaptic Learning Rules, Time-series Analysis.
 
 
 **Publication**: Yiu, Y.-H., & Leibold, C. (2023). A theory of hippocampal theta correlations accounting for extrinsic and intrinsic sequences. eLife, 12, RP86837. <https://doi.org/10.7554/eLife.86837.4>
@@ -98,7 +98,7 @@ Mathematical Modelling of Complex Systems, Numerical Simulation (Python, C++), N
 We proposed [a network model of dual processes](#dual-sequence-net), but is it actually how our brain works? By analyzing the brain data of rodents recorded by microelectrodes, we were able to prove that such dual coding exists, and published our results in *The Journal of Neurosciences*.
 
 **Methods**: 
-Circular Statistics, Regression Analysis, Hypothesis Testing, Linear classifiers, Time-series Analysis, Bayesian Parameter Estimation.
+Circular Statistics, Regression Analysis, Hypothesis Testing, Linear and Non-Linear Classifiers, Time-series Analysis, Bayesian Parameter Estimation.
 
 **Publication**: 
 Yiu, Y.-H., Leutgeb, J. K., & Leibold, C. (2022). Directional Tuning of Phase Precession Properties in the Hippocampus. The Journal of Neuroscience, 42(11), 2282–2297. <https://doi.org/10.1523/JNEUROSCI.1569-21.2021>
@@ -112,7 +112,7 @@ Yiu, Y.-H., Leutgeb, J. K., & Leibold, C. (2022). Directional Tuning of Phase Pr
 <div class="container">
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/gait/Network.png" alt='image 1' />
-        <figcaption>Network architecture. Pose sequences (inferred from walking videos) were compressed into low-dimensional latent space using VAEs, with auxiliary classification tasks to improve clustering. </figcaption>
+        <figcaption>Network architecture. Pose sequences (inferred from walking videos) were compressed into low-dimensional latent space using VAEs, with auxiliary classification tasks to improve the embedding quality. </figcaption>
     </figure>
     <figure style="width: 400px; margin: 10px;">
         <img src="/assets/images/gait/Latents.png" alt='image 2' />
@@ -120,11 +120,11 @@ Yiu, Y.-H., Leutgeb, J. K., & Leibold, C. (2022). Directional Tuning of Phase Pr
     </figure>
 </div>
 
-**Summary**: People with vertigo and balance disorders often exhibit abnormal gait patterns while walking, such as staggering or overly rigid motion. Here, we employed generative models such as Variational Autoencoders (VAEs) to examine the latent variables underlying these pathological walking patterns.
+**Summary**: People with vertigo and balance disorders often exhibit abnormal gait patterns while walking, such as staggering or overly rigid motion. Here, we employed generative models such as Variational Autoencoders (VAEs) to extract the latent variables underlying these pathological walking patterns.
 
-In cooperation with LMU clinics, we gained access to thousands of walking videos of patients with vertigo and balance disorders. By training the VAEs on these videos, we found that pathological walking patterns were clearly clustered in the latent space. Such a representation can aid in video-based diagnosis without relying on clinical observational assessment.
+In cooperation with LMU clinics, we gained access to thousands of walking videos of patients. After training the VAEs on these videos, we found that pathological walking patterns were clearly clustered in the latent space. Such a representation can aid in video-based diagnosis without relying on clinical assessment.
 
-**Methods**: Deep Learning (Pytorch), Computer Vision, Data Processing
+**Methods**: Deep Learning (PyTorch), Computer Vision (OpenCV), Data Processing, Data Augmentation
 
 **Article**:
 [MSc Thesis link](https://www.researchgate.net/publication/381114885_Deep_Spatio-Temporal_Representation_Learning_of_Gait_Signals_in_Patients_with_Vertigo_and_Balance_Disorders)
@@ -140,7 +140,7 @@ In cooperation with LMU clinics, we gained access to thousands of walking videos
 2018-19
 <figure style="width: 500px; margin: 10px; text-align: center;">
     <img src="/assets/images/deepvog/deepvog.gif" alt='image 1' />
-    <figcaption>Video-based Gaze estimation via semantic segmentation (left, pixel-wise classification of the pupil area).</figcaption>
+    <figcaption>Video-based Gaze estimation (Left) via semantic segmentation (Right, pixel-wise classification of the pupil area).</figcaption>
 </figure>
 
 <div class="container">
@@ -159,7 +159,7 @@ In cooperation with LMU clinics, we gained access to thousands of walking videos
 
 The network was trained on clinical eyetracking images provided by LMU clinics. It performs semantic segmentation on eye pupil area and fit a 3D eye-ball model to estimate the gaze. The network generalizes well to other data sets. A Docker image is available for easy deployment of the model.
 
-**Methods**: Deep Learning (TensorFlow, Keras), Computer Vision (OpenCV), Data Augmentation (Keras), Data Processing (Python).
+**Methods**: Deep Learning (TensorFlow, Keras), Computer Vision (OpenCV), Data Augmentation (Keras), Synthetic Data Generation (Blender), Data Processing.
 
 **Publication**: 
 Yiu, Y.-H., Aboulatta, M., Raiser, T., Ophey, L., Flanagin, V. L., zu Eulenburg, P., & Ahmadi, S.-A. (2019). DeepVOG: Open-source pupil segmentation and gaze estimation in neuroscience using deep learning. *Journal of Neuroscience Methods*, 324, 108307. <https://doi.org/10.1016/j.jneumeth.2019.05.016>

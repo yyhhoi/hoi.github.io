@@ -11,13 +11,13 @@ main:
 docs:
   - title: Portfolio
     children:
-      - title: Imitative Navigator
+      - title: "1. Imitative Navigator"
         url: /portfolio/#imitative-navigator
-      - title: "Dual-Sequence Net"
+      - title: "2. Dual-Sequence Net"
         url: /portfolio/#dual-sequence-net
-      - title: "Brain Data Science"
+      - title: "3. Brain Data Science"
         url: /portfolio/#brain-data-science
-      - title: "Latent Gait Patterns"
+      - title: "4. Latent Gait Patterns"
         url: /portfolio/#latent-gait-patterns
-      - title: "DeepVOG"
+      - title: "5. DeepVOG"
         url: /portfolio/#deepvog
