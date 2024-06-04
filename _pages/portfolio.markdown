@@ -69,7 +69,7 @@ Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Sim
 </div>
 
 **Summary**:
-Human thinking process is inherently dual in nature: While we were chopping an onion (local/actual actions), we might "mind-wander" and think what if we wathced TV instead? (remote/virtual plan). To model such a process, we simulated a biological neural network to test our theory. We showed that sequential firing of neurons can support such dual coding, and published our results in *eLife*.
+Human thinking process is inherently dual in nature: While we were chopping an onion (local/actual actions), we might "mind-wander" and think what if we wathced TV instead? (remote/virtual plans). To model such a process, we simulated a biological neural network to test our theory. We showed that sequential firing of neurons can support such dual coding, and published our results in *eLife*.
 
 **Methods**:
 Mathematical Modelling of Complex Systems, Numerical Simulation (Python, C++), Classical Machine Learning, Synaptic Learning Rules, Time-series Analysis.
