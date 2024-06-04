@@ -47,7 +47,7 @@ In reinforcement learning (RL), an initial naive policy often needs to iterate n
 I implemented an Imitation Learning algorithm, called AWAC (Advantage Weighted Actor Critic, by [UC Berkeley](https://arxiv.org/abs/2006.09359)), to solve the problem in the context of spatial navigation. Initially, a random policy was inefficient to bring the robot to the goal location. After imitating an obstacle-avoidance controller policy, it was possible to sample the goal reward. Further fine-tuning the policy led to the optimal pathway. It was the first instance that imitation leraning was applied to spatial navigation problem.
 
 **Methods**:
-Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Simulator (Webots, Python), Computer Vision (OpenCV \& pretrained CNNs), Classical Machine Learning.
+Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Simulator (Webots, Python), Computer Vision (OpenCV & pretrained CNNs), Classical Machine Learning.
 
 **GitHub repo**: <https://github.com/yyhhoi/ImiNav>
 
