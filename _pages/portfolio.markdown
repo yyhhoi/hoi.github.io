@@ -42,9 +42,9 @@ figcaption {
 </div>
 
 **Summary**:
-In reinforcement learning (RL), an initial naive policy often needs to iterate numerous times to sample the reward signal, which poses a challenge to robotics as each robotic deployment or simulation is very costly. 
+In reinforcement learning (RL), an initial naive policy often needs to iterate numerous times to sample the reward signal, which poses a challenge to robotics as each robotic deployment or simulation is very costly. Instead of slowing training the policy from scratch, how about we "jump-start" the training by showing the agent how the task is done, albeit in a suboptimal way? Given some prior knowledge, the agent can quickly sample the reward, and further fine-tune the policy the to optimal. 
 
-I implemented an Imitation Learning algorithm, called AWAC (Advantage Weighted Actor Critic, by [UC Berkeley](https://arxiv.org/abs/2006.09359)), to solve the problem in the context of spatial navigation. Initially, a random policy was inefficient to bring the robot to the goal location. After imitating an obstacle-avoidance controller policy, it was possible to sample the goal reward. Further fine-tuning the policy led to the optimal pathway. It was the first instance that imitation leraning was applied to spatial navigation problem.
+For that I implemented an Imitation Learning algorithm, called AWAC (Advantage Weighted Actor Critic, by [UC Berkeley](https://arxiv.org/abs/2006.09359)), to solve the problem in the context of spatial navigation. It significantly reduced the training time by jump-starting it. It was the first instance that imitation leraning was applied to spatial navigation problem.
 
 **Methods**:
 Deep Reinforcement Learning (PyTorch), Numerical Simulation (NumPy), Robotic Simulator (Webots, Python), Computer Vision (OpenCV & pretrained CNNs), Classical Machine Learning.
